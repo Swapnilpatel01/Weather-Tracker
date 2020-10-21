@@ -19,12 +19,6 @@ input.addEventListener('keypress', function (event) {
     }
 })
 
-// input2.addEventListener('keypress', function (event) {
-//     if (event.keyCode === 13) {
-//         searchButton.click();
-//     }
-// })
-
 function getAPIData(city, state) {
     fetch(`${api.base}weather?q=${city},${state}&units=imperial&APPID=${api.key}`)
         .then(weather => {
@@ -37,7 +31,6 @@ function displayWeatherData(weather) {
     
     let location = document.getElementById('location');
     location.innerHTML = `${weather.name}, ${weather.sys.country}`;
-    //${input2.value.charAt(0).toUpperCase() + input2.value.slice(1)}
 
     let weatherType = document.getElementById('weatherType');
     weatherType.innerHTML = `${weather.weather[0].main}`;
