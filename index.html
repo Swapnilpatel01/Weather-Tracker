@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather WebApp</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4UpfEwGpCbdBEjcGCnjUqXOZAIqPoLqk&libraries=places,geometry" type="text/javascript"></script>
+
+</head>
+
+<body onload=currentTime();>
+    <div class="time" id="time"></div>
+    <div class="container">
+        <div class="location" id="location">City</div>
+        <div class="elements">
+            <div class="date" id="date">Date</div>
+            <div class="temperature" id="temperature">Temperature</div>
+            <div class="weatherType" id="weatherType">Weather</div>
+        </div>
+
+        <input type="text" placeholder="Enter in city..." class="userInput" id="userInput">
+        <!-- <input type="text" placeholder="Enter in state/country..." class="userInput2" id="userInput2"> -->
+        <button class="btn" id="button">Search</button>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="weather.js"></script>
+
+]</body>
+
+</html>
