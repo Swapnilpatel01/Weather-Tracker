@@ -4,7 +4,6 @@ const api = {
 }
 
 const input = document.getElementById('userInput');
-//const input2 = document.getElementById('userInput2')
 const searchButton = document.getElementById('button');
 
 function search() {
